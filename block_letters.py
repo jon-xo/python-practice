@@ -31,4 +31,4 @@ J J   N   N
  JJ   N   N   
 """
 
-print(full_initals)
+print(first_inital)
