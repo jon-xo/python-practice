@@ -13,8 +13,8 @@ import random
 # - "Outlook not so good."
 # - "Very dobutful."
 
-name = "Jon"
-question = "Will the sky fall tomorrow?"
+name = input("Enter your name: ")
+question = input("Input a yes or no question: ")
 answer = ""
 
 random_number = random.randint(1, 9)
@@ -46,10 +46,15 @@ else:
 # Output:
 
 if name:
+    print()
     print(name + " asks: " + question)
 else:
+    print()
     print("Question: " + question)
 
-print()
-print("Magic 8-Ball's answer: " + answer)
+if question:
+    print()
+    print("Magic 8-Ball's answer: " + answer)
+else:
+    print("Please enter a question to avoid a time/space fragment event.")
 
