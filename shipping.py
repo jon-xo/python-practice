@@ -7,7 +7,7 @@
 
 ## Prompt user with input for package weight
 
-weight = 11
+weight = 8.4
 
 # Ground Shipping Cost
 ground_flat = 20
@@ -24,6 +24,10 @@ elif weight > 6 and weight <= 10:
 else:
     weight = (weight * 4.75) + ground_flat
     print(weight)
+
+# Premium Ground Cost
+premium_ground = 125.00
+print("Premium Ground Cost: " + str(premium_ground))
 
 ## Determine which shipping method is the least expensive
 
