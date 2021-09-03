@@ -62,3 +62,36 @@ range_list = range(2, 3000, 100)
 
 range_list_length = len(range_list)
 print(range_list_length)
+
+## Slicing lists
+## Part I
+
+## Allows extracting a portion of a list within a start and end parameter
+
+suitcase = ["shirt", "shirt", "pants", "pants", "pajamas", "books"]
+beginning = suitcase[0:2]
+print(beginning)
+
+middle = suitcase[2:4]
+print(middle)
+
+## Part II
+## slicing allows selection of the first `n` elements in the list
+## starting from the 0 index; this can also be combined with a negative index
+
+suitcase = ["shirt", "shirt", "pants", "pants", "pajamas", "books"]
+
+last_two_elements = suitcase[-2:]
+print(last_two_elements)
+
+slice_off_last_three = suitcase[:-3]
+print(slice_off_last_three)
+
+## Count
+## count method returns the match occurances of provided element
+## Can be used with 2-dimensional lists
+
+votes = ["Jake", "Jake", "Laurie", "Laurie", "Laurie", "Jake", "Jake", "Jake", "Laurie", "Cassie", "Cassie", "Jake", "Jake", "Cassie", "Laurie", "Cassie", "Jake", "Jake", "Cassie", "Laurie"]
+jake_votes = votes.count("Jake")
+print(jake_votes)
+
