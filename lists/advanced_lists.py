@@ -28,3 +28,37 @@ data_science_topics.pop()
 print(data_science_topics)
 data_science_topics.pop(3)
 print(data_science_topics)
+
+## Range
+## Function generates numbers starting at 0 up to the last digit that is less then the parameter
+## Default output is a range object, when combined with the list() function a standard list is created
+
+number_list = range(9)
+print(number_list)
+
+zero_to_seven = range(8)
+print(list(zero_to_seven))
+
+## The starting int can be set by adding a second digit to the range parameters
+
+my_list = range(2, 9)
+print(list(my_list))
+
+## Adding a third digit to the same example outputs a list that 
+## outputs a list counting by that increment
+
+my_list = range(2, 9, 2)
+print(list(my_list))
+
+range_five_three = range(5, 15, 3)
+
+range_diff_five = range(0, 40, 5)
+
+
+## Length
+## Built in function that can be applied to determine the length of a list
+
+range_list = range(2, 3000, 100)
+
+range_list_length = len(range_list)
+print(range_list_length)
