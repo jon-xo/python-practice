@@ -95,3 +95,22 @@ votes = ["Jake", "Jake", "Laurie", "Laurie", "Laurie", "Jake", "Jake", "Jake", "
 jake_votes = votes.count("Jake")
 print(jake_votes)
 
+## Sort method
+## Use to sort numeric or alphabetical order
+## Can be used in forward or reverse order
+
+addresses = ["221 B Baker St.", "42 Wallaby Way", "12 Grimmauld Place", "742 Evergreen Terrace", "1600 Pennsylvania Ave", "10 Downing St."]
+addresses.sort()
+print(addresses)
+
+cities = ["London", "Paris", "Rome", "Los Angeles", "New York"]
+cities.sort(reverse=True)
+print(cities)
+
+## Sorted Function
+## The sorted function allows a new list created & sorted 
+
+games = ["Portal", "Minecraft", "Pacman", "Tetris", "The Sims", "Pokemon"]
+games_sorted = sorted(games)
+print(games)
+print(games_sorted)
