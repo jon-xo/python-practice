@@ -115,3 +115,19 @@ games = ["Portal", "Minecraft", "Pacman", "Tetris", "The Sims", "Pokemon"]
 games_sorted = sorted(games)
 print(games)
 print(games_sorted)
+
+## Zip Function
+
+## Combine associated data sets without multi-dimensional lists.
+## Combined daata is stored in memory, converting the object
+## to a list creates a list of tuples
+
+names = ["Sam", "Tony", "Bruce", "Thor"]
+powers = ["Flight", "Tech", "Anger", "Thunder"]
+
+avengers = zip(names, powers)
+print(avengers)
+
+avengers_list = list(avengers)
+print(avengers_list)
+
