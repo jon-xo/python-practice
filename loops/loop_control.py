@@ -15,3 +15,13 @@ for item in items_on_sale:
 print()
 print("End of search!")
 
+# continue
+## Paired with a conditional to allow to skip past a loop iteration
+
+ages = [12, 38, 34, 26, 21, 19, 67, 41, 17]
+
+for patron in ages:
+    if patron < 21:
+        continue
+    else:
+        print(patron)
