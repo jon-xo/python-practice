@@ -32,4 +32,4 @@ for i in range(len(titles) - 1):
     # print(titles[i])
     # print(poets[i])
     # print(dates[i])
-    print("The poem {title} was published by {poet} in {date}.").format(title=titles[i], poet=poets[i], date=dates[i])
+    print("The poem {title} was published by {poet} in {date}.".format(title=titles[i], poet=poets[i], date=dates[i]))
