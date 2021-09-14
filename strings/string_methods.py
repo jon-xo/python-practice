@@ -60,8 +60,24 @@ print(winter_trees_full)
 ## strip allows for removing leading and trailing whitespace surronding strings.
 ## strip also will remove occurances of a string when passed as a parameter
 
+featuring = "           rob thomas                 "
+print(featuring.strip())
 
+love_maybe_lines = ['Always    ', '     in the middle of our bloodiest battles  ', 'you lay down your arms', '           like flowering mines    ','\n' ,'   to conquer me home.    ']
 
+# love_maybe_lines_stripped = [line.split('') if line == '' else line.strip() for line in love_maybe_lines]
+# love_maybe_full = ' '.join([line.split('') for line in love_maybe_lines_stripped])
 
+love_maybe_lines_stripped = []
+
+for line in love_maybe_lines:
+    if line == '\n':
+        love_maybe_lines.remove(line)
+    else:
+        love_maybe_lines_stripped.append(line.strip())
+
+print(love_maybe_lines_stripped)
+love_maybe_full = '\n'.join(love_maybe_lines_stripped)
+print(love_maybe_full)
 
 ## .format()
