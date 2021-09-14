@@ -58,7 +58,7 @@ print(winter_trees_full)
 
 ## .strip()
 ## strip allows for removing leading and trailing whitespace surronding strings.
-## strip also will remove occurances of a string passed as a parameter
+## strip also will remove occurances of a string when passed as a parameter
 
 
 
