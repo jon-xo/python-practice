@@ -55,6 +55,13 @@ winter_trees_full = '\n'.join(winter_trees_lines)
 print(winter_trees_full)
 
 ## .replace()
+## replace takes two arguments and replaces all instances of the first,
+## with the second
+
+with_spaces = "You got the kind of loving that can be so smooth"
+
+with_underscores = with_spaces.replace(' ', '_')
+print(with_underscores)
 
 ## .strip()
 ## strip allows for removing leading and trailing whitespace surronding strings.
@@ -80,4 +87,19 @@ print(love_maybe_lines_stripped)
 love_maybe_full = '\n'.join(love_maybe_lines_stripped)
 print(love_maybe_full)
 
+## .find()
+## find method accepts a single argument and returns the first 
+## matching index value of a matching string
+print('smooth'.find('t'))
+
 ## .format()
+## the format method facilitates variable string replacement. 
+## {} is used a placeholder for the variable passed to format
+
+def favorite_movie_string(movie, director):
+    return "My favorite movie is \"{movie}\" by {director}.".format(movie=movie, director=director)
+
+print(favorite_movie_string("Star Wars", "George Lucas"))
+
+def poem_title_card(title, poet):
+    return "The poem \"{}\" is written by {}.".format(title, poet)
