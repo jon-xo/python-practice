@@ -37,12 +37,31 @@ print(author_last_names)
 ## \n: Newline
 ## \t: Horizontal Tab
 
-
-
 ## .join()
+
+## join is the opposite of split and uses a different syntax:
+## 'delimiter'.join(list_you_want_to_join)
+
+
+reapers_line_one_words = ["Black", "reapers", "with", "the", "sound", "of", "steel", "on", "stones"]
+
+reapers_line_one = ' '.join(reapers_line_one_words)
+
+## join can also be used to with other strings and escapes as the delimiter
+
+winter_trees_lines = ['All the complicated details', 'of the attiring and', 'the disattiring are completed!', 'A liquid moon', 'moves gently among', 'the long branches.', 'Thus having prepared their buds', 'against a sure winter', 'the wise trees', 'stand sleeping in the cold.']
+
+winter_trees_full = '\n'.join(winter_trees_lines)
+print(winter_trees_full)
 
 ## .replace()
 
 ## .strip()
+## strip allows for removing leading and trailing whitespace surronding strings.
+## strip also will remove occurances of a string passed as a parameter
+
+
+
+
 
 ## .format()
