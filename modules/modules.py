@@ -1,5 +1,6 @@
 # modules.py
 from datetime import datetime
+from decimal import Decimal
 import random
 
 ## datetime
@@ -19,3 +20,10 @@ random_list = [random.randint(1, 100) for num in range(101)]
 
 randomer_number = random.choice(random_list)
 print(randomer_number)
+
+## decimals
+cost_of_gum = Decimal('0.10')
+cost_of_gumdrop = Decimal('0.35')
+ 
+cost_of_transaction = cost_of_gum + cost_of_gumdrop
+print(cost_of_transaction)
