@@ -30,3 +30,19 @@ user_ids = {"teraCoder": 9018293, "proProgrammer": 119238}
 user_ids.update({"theLooper": 138475, "stringQueen": 85739})
 print()
 
+# List comprehensions
+# Python will allow you to create a dictionary using two seperate lists
+names = ["Jenny", "Alexis", "Samantha", "Grace"]
+heights = [61, 74, 99, 82]
+
+students = {key:value for key, value in zip(names, heights)}
+print(students)
+
+drinks = ["espresso", "chai", "decaf", "drip"]
+caffeine = [64, 40, 0, 120]
+
+zipped_drinks = zip(drinks, caffeine)
+print(zipped_drinks)
+drinks_to_caffeine = {key:value for key, value in zipped_drinks}
+
+print(drinks_to_caffeine)
