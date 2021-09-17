@@ -1,5 +1,9 @@
 # files.py
 
+# with keyword operates as a context manager, which controls opening
+# and closing the file block, there for, all file operations happen
+# in the indented block
+
 # To read a file
 
 with open('new_document.txt') as new_doc:
