@@ -59,7 +59,7 @@ converter = DistanceConverter()
 five_miles_to_kms = converter.how_many_kms(5)
 print(five_miles_to_kms)
 
-
+# -------------
 # Constructors
 # Methods with special methods include dunder methods,
 # which can be identified by double underscores on either side of them
@@ -76,4 +76,21 @@ class Shouter:
 
 shout1 = Shouter("Anybody?!")
 shout2 = Shouter(7)
+
+# -------------
+# Instance variables
+# The data held by an object is referred to as an instance varaible
+# these are variables that are specific to the object
+
+class FakeDict:
+    pass
+
+fake_dict1 = FakeDict()
+fake_dict2 = FakeDict()
+
+fake_dict1.fake_key = "This works!"
+fake_dict2.fake_key = "This too!"
+
+working_string = "{} {}".format(fake_dict1.fake_key, fake_dict2.fake_key)
+print(working_string)
 
