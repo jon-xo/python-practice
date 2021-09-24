@@ -94,3 +94,32 @@ fake_dict2.fake_key = "This too!"
 working_string = "{} {}".format(fake_dict1.fake_key, fake_dict2.fake_key)
 print(working_string)
 
+# -------------
+# Attribute functions
+
+# If you attempt to access an attribute that doesn't exist
+# Python will throw an AttributeError
+
+try:
+    fake_dict1.fake_lock
+except AttributeError:
+    print("This text gets printed!")
+
+# the hasattr() function can be used to return true/false
+# if the attribute exists
+
+print(hasattr(fake_dict1, "fake_lock"))
+
+# getattr() can be used to return the value of an attribute,
+# or a default value
+
+print(getattr(fake_dict1, "test_lock", 550))
+
+can_we_count_it = [{'s': False}, "sassafrass", 18, ["a", "c", "s", "d", "s"]]
+
+for element in can_we_count_it:
+    if hasattr(element, "count"):
+        print(str(type(element)) + " has the count attribute!")
+    else:
+        print(str(type(element)) + " does not have the count attribute :(") 
+
