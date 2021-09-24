@@ -123,3 +123,40 @@ for element in can_we_count_it:
     else:
         print(str(type(element)) + " does not have the count attribute :(") 
 
+# Self
+# The self keyword refers to the object and not the class being called
+# this can be used to store private information in a class
+
+class SearchEngineEntry:
+    secure_prefix = "https://"
+    def __init__(self, url):
+        self.url = url
+    
+    def secure(self):
+        return "{prefix}{site}".format(prefix=self.secure_prefix,site=self.url)
+
+apple = SearchEngineEntry("www.apple.com")
+github = SearchEngineEntry("www.github.com")
+
+print(apple.secure())
+print(github.secure())
+
+
+class Circle:
+    pi = 3.14
+    def __init__(self, diameter):
+        print("Creating circle with diameter {d}".format(d=diameter))
+
+        self.radius = diameter / 2
+
+    def circumference(self):
+        return 2 * self.pi * self.radius
+
+
+medium_pizza = Circle(12)
+teaching_table = Circle(36)
+round_room = Circle(11460)
+
+print(medium_pizza.circumference())
+print(teaching_table.circumference())
+print(round_room.circumference())
