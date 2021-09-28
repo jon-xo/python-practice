@@ -169,3 +169,18 @@ print(medium_pizza.circumference())
 print(teaching_table.circumference())
 print(round_room.circumference())
 
+# -------------
+# String representation
+# The dunder method __repr__() can be used to establish
+# a string representation of a class when printed to the
+# console
+
+class Employee():
+    def __init__(self, name):
+        self.name = name
+    
+    def __repr__(self):
+        return self.name
+    
+stormtrooper = Employee("Finn")
+print(stormtrooper)
