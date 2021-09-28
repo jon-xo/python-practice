@@ -102,3 +102,70 @@ print(working_string)
 # including ones that were not a part of the object constructor
 
 print(dir(fake_dict1))
+
+# Attribute functions
+
+# If you attempt to access an attribute that doesn't exist
+# Python will throw an AttributeError
+
+try:
+    fake_dict1.fake_lock
+except AttributeError:
+    print("This text gets printed!")
+
+# the hasattr() function can be used to return true/false
+# if the attribute exists
+
+print(hasattr(fake_dict1, "fake_lock"))
+
+# getattr() can be used to return the value of an attribute,
+# or a default value
+
+print(getattr(fake_dict1, "test_lock", 550))
+
+can_we_count_it = [{'s': False}, "sassafrass", 18, ["a", "c", "s", "d", "s"]]
+
+for element in can_we_count_it:
+    if hasattr(element, "count"):
+        print(str(type(element)) + " has the count attribute!")
+    else:
+        print(str(type(element)) + " does not have the count attribute :(") 
+
+# Self
+# The self keyword refers to the object and not the class being called
+# this can be used to store private information in a class
+
+class SearchEngineEntry:
+    secure_prefix = "https://"
+    def __init__(self, url):
+        self.url = url
+    
+    def secure(self):
+        return "{prefix}{site}".format(prefix=self.secure_prefix,site=self.url)
+
+apple = SearchEngineEntry("www.apple.com")
+github = SearchEngineEntry("www.github.com")
+
+print(apple.secure())
+print(github.secure())
+
+
+class Circle:
+    pi = 3.14
+    def __init__(self, diameter):
+        print("Creating circle with diameter {d}".format(d=diameter))
+
+        self.radius = diameter / 2
+
+    def circumference(self):
+        return 2 * self.pi * self.radius
+
+
+medium_pizza = Circle(12)
+teaching_table = Circle(36)
+round_room = Circle(11460)
+
+print(medium_pizza.circumference())
+print(teaching_table.circumference())
+print(round_room.circumference())
+
