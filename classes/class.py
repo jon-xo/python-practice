@@ -94,3 +94,11 @@ fake_dict2.fake_key = "This too!"
 working_string = "{} {}".format(fake_dict1.fake_key, fake_dict2.fake_key)
 print(working_string)
 
+# -------------
+# Objects
+
+# Attributes can be added to objects after instantation,
+# the dir() function can list all available attributes,
+# including ones that were not a part of the object constructor
+
+print(dir(fake_dict1))
