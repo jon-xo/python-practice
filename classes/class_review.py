@@ -27,10 +27,7 @@ class Student:
         if type(grade) == Grade:
             self.grades.append(grade)
 
-    def get_average(self):
-        
-
-            
+    # def get_average(self):        
 
 # Create three instances of the Student class:
 
