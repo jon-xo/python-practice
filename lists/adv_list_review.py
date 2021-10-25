@@ -22,5 +22,7 @@ removed_item = inventory[4]
 
 inventory.insert(10, "19th Century Bed Frame")
 
-invetory.sort()
+inventory.sort()
 print(inventory)
+
+
